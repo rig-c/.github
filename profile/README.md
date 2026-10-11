@@ -2,6 +2,12 @@
   <img src="https://raw.githubusercontent.com/rig-c/.github/main/profile/banner.svg" alt="rig-c — a toolchain for 2D character rigs an AI agent can author and verify" width="100%" />
 </p>
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/rig-c/.github/main/profile/trailer.webp" alt="A character sitting on a swing under a night sky: the swing sways, and her twin tails, skirt and legs follow it" width="100%" />
+</p>
+
+<p align="center"><em>One painting, rigged with <code>@rig-c/parts</code> and compiled and rendered by <code>rig-c</code>. The swing is one more bone of the same skeleton; the hair, the skirt and the legs follow it by physics. The sky and the lights are composited behind the render.</em></p>
+
 **2D character rigs, authored by an AI agent that cannot see them — and verified before anything is written.**
 One painting goes in; a rigged, animated character that plays in the browser comes out. Every stage prints named,
 numeric findings and refuses by name what it cannot verify, so a wrong file never reaches the disk.
