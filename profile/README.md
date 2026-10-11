@@ -6,7 +6,7 @@
   <img src="https://raw.githubusercontent.com/rig-c/.github/main/profile/trailer.webp" alt="A character on a swing under a night sky tilts her head, smiles, kicks her legs, hops and waves, her twin tails following; for one beat her meshes and bones are drawn over her" width="100%" />
 </p>
 
-<p align="center"><em>One painting, rigged with <code>@rig-c/parts</code> and compiled and rendered by <code>rig-c</code>. The swing is one more bone of the same skeleton; the hair, the skirt and the legs follow it by physics, and the meshes and bones shown are the render's own geometry. The sky, the lights and the captions are composited around the render.</em></p>
+<p align="center"><em>One painting, rigged with <code>@rig-c/parts</code> and compiled and rendered by <code>rig-c</code>. The swing is one more bone of the same skeleton; the hair, the skirt and the legs follow it by physics, and the meshes and bones shown are the render's own geometry. The sky, the lights and the captions are composited around the render. <a href="https://github.com/rig-c/trailer">How it was made, and one command to rebuild it →</a></em></p>
 
 **2D character rigs, authored by an AI agent that cannot see them — and verified before anything is written.**
 One painting goes in; a rigged, animated character that plays in the browser comes out. Every stage prints named,
