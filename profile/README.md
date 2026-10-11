@@ -18,13 +18,6 @@ numeric findings and refuses by name what it cannot verify, so a wrong file neve
 | 2 | [**core**](https://github.com/rig-c/core) | `npm i -D rig-c` | The rig compiler: a rig spec and a motion spec in, skeleton data out — in the Spine 4.3 format, with its own compiled model beside it — gated by named assertions before a byte is written |
 | 3 | [**play**](https://github.com/rig-c/play) | `npm i @rig-c/play` | Plays the compiled model in the browser, as plain DOM elements or one canvas: tracks, mixing, additive layers, per-pose bone hooks |
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/rig-c/parts/main/assets/demo-source.png" alt="A full-body character painting" height="420" />
-  <img src="https://raw.githubusercontent.com/rig-c/parts/main/assets/demo-idle.png" alt="The same character rigged: breathing, blinking and swaying in a four-second loop" height="420" />
-</p>
-
-<p align="center"><em>One painting, and the rig <code>@rig-c/parts</code> built from it — compiled and gated by <code>rig-c</code>, played by <code>@rig-c/play</code>.</em></p>
-
 ### Built for agents
 
 - **The messages are the interface.** A refusal names the object, the value found and the value required — an agent reads the line and knows which file to change.
