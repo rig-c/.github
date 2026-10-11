@@ -13,12 +13,11 @@ numeric findings and refuses by name what it cannot verify, so a wrong file neve
 | 3 | [**play**](https://github.com/rig-c/play) | `npm i @rig-c/play` | Plays the compiled model in the browser, as plain DOM elements or one canvas: tracks, mixing, additive layers, per-pose bone hooks |
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/rig-c/parts/main/assets/demo-source.png" alt="A full-body character painting" height="300" />
-  <img src="https://raw.githubusercontent.com/rig-c/parts/main/assets/demo-idle.png" alt="The same character rigged: breathing, blinking and swaying in a four-second loop" height="300" />
-  <img src="https://raw.githubusercontent.com/rig-c/core/main/assets/rigc-demo.gif" alt="Loose part PNGs assembling themselves into a character that breathes, blinks and waves" height="300" />
+  <img src="https://raw.githubusercontent.com/rig-c/parts/main/assets/demo-source.png" alt="A full-body character painting" height="420" />
+  <img src="https://raw.githubusercontent.com/rig-c/parts/main/assets/demo-idle.png" alt="The same character rigged: breathing, blinking and swaying in a four-second loop" height="420" />
 </p>
 
-<p align="center"><em>Left and centre: one painting, and the rig <code>@rig-c/parts</code> built from it. Right: fourteen parts, one rig spec and one motion spec, compiled and rendered by <code>rig-c</code>.</em></p>
+<p align="center"><em>One painting, and the rig <code>@rig-c/parts</code> built from it — compiled and gated by <code>rig-c</code>, played by <code>@rig-c/play</code>.</em></p>
 
 ### Built for agents
 
