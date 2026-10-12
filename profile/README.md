@@ -25,7 +25,7 @@ An agent that has never seen these tools is handed one painting and the installe
 | [Sol 6.1](https://github.com/rig-c/exam/tree/main/results/sol-6.1/) | 2 | 32 / 32 | 14.2 to 15.3 |
 <!-- exam:end -->
 
-Every one of them is its vendor's lighter tier, and every line passed. **Sit it with yours:** paste [one prompt](https://github.com/rig-c/exam/blob/main/PROMPT.md) into any coding agent, open a pull request, and the run is regraded from the files it hands in and added to [the table](https://github.com/rig-c/exam#results) — with its journal, and whatever it found wrong with the tools.
+Every line passed, and the three models named are each their vendor's lighter tier. **Sit it with yours:** paste [one prompt](https://github.com/rig-c/exam/blob/main/PROMPT.md) into any coding agent, open a pull request, and the run is regraded from the files it hands in and added to [the table](https://github.com/rig-c/exam#results) — with its journal, and whatever it found wrong with the tools.
 
 | | Repository | Install | What it does |
 | :-: | --- | --- | --- |
