@@ -28,7 +28,7 @@ numeric findings and refuses by name what it cannot verify, so a wrong file neve
 
 ### Examined by agents
 
-[**rig-c/exam**](https://github.com/rig-c/exam) is an open-book exam: a coding agent with nothing but the installed packages builds a rig from one painting, and writes down what it expects before every step. Anyone may sit it with any model. [The results](https://github.com/rig-c/exam/blob/runs/RESULTS.md) and every journal are public, and a line where an examinee was surprised becomes an issue on the tools.
+[**rig-c/exam**](https://github.com/rig-c/exam) is an open-book exam: a coding agent with nothing but the installed packages builds a rig from one painting, and writes down what it expects before every step. Anyone may sit it with any model. [The results](https://github.com/rig-c/exam#results) and every journal are public, and a line where an examinee was surprised becomes an issue on the tools.
 
 ### Names
 
