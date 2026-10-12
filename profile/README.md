@@ -17,7 +17,7 @@ numeric findings and refuses by name what it cannot verify, so a wrong file neve
 An agent that has never seen these tools is handed one painting and the installed packages — nothing else — and has to build a rig that passes its check, add a wave, and correct a draft that fails. It writes down what it expects before every step. [**rig-c/exam**](https://github.com/rig-c/exam) is that exam, and these are the models that have sat it:
 
 <!-- exam:start — generated in rig-c/exam by `python3 results.py --profile`; do not edit by hand -->
-| model | sittings | lines passed, of lines graded | minutes for the three tasks |
+| model | sittings | lines passed, of lines graded | minutes for the tasks sat |
 | --- | --- | --- | --- |
 | [Claude Haiku](https://github.com/rig-c/exam/tree/main/results/claude-haiku/) | 1 | 16 / 16 | 21 |
 | [Gemini 3.8 Flash](https://github.com/rig-c/exam/tree/main/results/gemini-3.8-flash/) | 1 | 16 / 16 | 20 |
