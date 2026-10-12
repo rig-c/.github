@@ -12,6 +12,21 @@
 One painting goes in; a rigged, animated character that plays in the browser comes out. Every stage prints named,
 numeric findings and refuses by name what it cannot verify, so a wrong file never reaches the disk.
 
+### Does your model pass?
+
+An agent that has never seen these tools is handed one painting and the installed packages — nothing else — and has to build a rig that passes its check, add a wave, and correct a draft that fails. It writes down what it expects before every step. [**rig-c/exam**](https://github.com/rig-c/exam) is that exam, and these are the models that have sat it:
+
+<!-- exam:start — generated in rig-c/exam by `python3 results.py --profile`; do not edit by hand -->
+| model | sittings | lines passed, of lines graded | minutes for the three tasks |
+| --- | --- | --- | --- |
+| [Claude Haiku](https://github.com/rig-c/exam/tree/main/results/claude-haiku/) | 1 | 16 / 16 | 21 |
+| [Gemini 3.8 Flash](https://github.com/rig-c/exam/tree/main/results/gemini-3.8-flash/) | 1 | 16 / 16 | 20 |
+| [`gpt-6-sol` (not established which model)](https://github.com/rig-c/exam/tree/main/results/gpt-6-sol/) | 1 | 16 / 16 | 14.1 |
+| [Sol 6.1](https://github.com/rig-c/exam/tree/main/results/sol-6.1/) | 2 | 32 / 32 | 14.2 to 15.3 |
+<!-- exam:end -->
+
+Every one of them is its vendor's lighter tier, and every line passed. **Sit it with yours:** paste [one prompt](https://github.com/rig-c/exam/blob/main/PROMPT.md) into any coding agent, open a pull request, and the run is regraded from the files it hands in and added to [the table](https://github.com/rig-c/exam#results) — with its journal, and whatever it found wrong with the tools.
+
 | | Repository | Install | What it does |
 | :-: | --- | --- | --- |
 | 1 | [**parts**](https://github.com/rig-c/parts) | `npm i -D @rig-c/parts` | Assembles one character painting's decomposed layers into rig-ready parts, then authors weighted meshes, bone chains, physics and a looping idle over them |
@@ -25,10 +40,6 @@ numeric findings and refuses by name what it cannot verify, so a wrong file neve
 - **Emit only after green.** The compiler writes nothing that fails its gate.
 
 `core` and `parts` each carry a `docs/AUTHORING.md` — the guide an agent authors from — and ship as agent skills; `play`'s README is its guide.
-
-### Examined by agents
-
-[**rig-c/exam**](https://github.com/rig-c/exam) is an open-book exam: a coding agent with nothing but the installed packages builds a rig from one painting, and writes down what it expects before every step. Anyone may sit it with any model. [The results](https://github.com/rig-c/exam#results) and every journal are public, and a line where an examinee was surprised becomes an issue on the tools.
 
 ### Names
 
