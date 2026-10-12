@@ -26,8 +26,12 @@ numeric findings and refuses by name what it cannot verify, so a wrong file neve
 
 `core` and `parts` each carry a `docs/AUTHORING.md` — the guide an agent authors from — and ship as agent skills; `play`'s README is its guide.
 
+### Examined by agents
+
+[**rig-c/exam**](https://github.com/rig-c/exam) is an open-book exam: a coding agent with nothing but the installed packages builds a rig from one painting, and writes down what it expects before every step. Anyone may sit it with any model. [The results](https://github.com/rig-c/exam/blob/runs/RESULTS.md) and every journal are public, and a line where an examinee was surprised becomes an issue on the tools.
+
 ### Names
 
 `rig-c` is also published as `@rig-c/core`. `rig-parts` and `rig-play` are `@rig-c/parts` and `@rig-c/play` under the names they shipped as before the scope; `spine-rigc`, `spine-parts` and `spine-html` are the same packages under their first names. Every alias carries the same files at every version.
 
-MIT licensed.
+The tools are MIT licensed; the exam's content is CC BY-NC 4.0.
