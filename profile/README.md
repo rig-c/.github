@@ -12,6 +12,8 @@
 One painting goes in; a rigged, animated character that plays in the browser comes out. Every stage prints named,
 numeric findings and refuses by name what it cannot verify, so a wrong file never reaches the disk.
 
+**rig-c makes no images.** The painting and its layer split come from image models you run yourself — on your own GPU, or a free web demo. rig-c starts from those files, ships no model weights, and runs every one of its own steps on the CPU.
+
 <p align="center"><a href="https://github.com/rig-c/getting-started"><b>→ Getting started</b></a> — for people setting it up: try it in about three minutes with no GPU, then make your own character on an NVIDIA GPU, an Apple Silicon Mac, or with no GPU at all.</p>
 
 ### Does your model pass?
