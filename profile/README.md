@@ -27,11 +27,14 @@ An agent that has never seen these tools is handed one painting and the installe
 
 Every line passed, and the three models named are each their vendor's lighter tier. **Sit it with yours:** paste [one prompt](https://github.com/rig-c/exam/blob/main/PROMPT.md) into any coding agent, open a pull request, and the run is regraded from the files it hands in and added to [the table](https://github.com/rig-c/exam#results) — with its journal, and whatever it found wrong with the tools.
 
+**New here and setting it up yourself?** [**Getting started**](https://github.com/rig-c/getting-started) is written for people: what the tools need, how to make it on a machine with an NVIDIA GPU, on an Apple Silicon Mac, or with no GPU, and the path from one painting to a rig playing in your browser.
+
 | | Repository | Install | What it does |
 | :-: | --- | --- | --- |
 | 1 | [**parts**](https://github.com/rig-c/parts) | `npm i -D @rig-c/parts` | Assembles one character painting's decomposed layers into rig-ready parts, then authors weighted meshes, bone chains, physics and a looping idle over them |
 | 2 | [**core**](https://github.com/rig-c/core) | `npm i -D rig-c` | The rig compiler: a rig spec and a motion spec in, skeleton data out — in the Spine 4.3 format, with its own compiled model beside it — gated by named assertions before a byte is written |
 | 3 | [**play**](https://github.com/rig-c/play) | `npm i @rig-c/play` | Plays the compiled model in the browser, as plain DOM elements or one canvas: tracks, mixing, additive layers, per-pose bone hooks |
+| 4 | [**pose**](https://github.com/rig-c/pose) | `npm i -D @rig-c/pose` | Puts motion from a pose sequence (a video, a dataset or hand-placed points) onto a rig rig-c built, as bone keys, checked before it is written |
 
 ### Built for agents
 
