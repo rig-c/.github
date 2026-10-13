@@ -12,6 +12,8 @@
 One painting goes in; a rigged, animated character that plays in the browser comes out. Every stage prints named,
 numeric findings and refuses by name what it cannot verify, so a wrong file never reaches the disk.
 
+<p align="center"><a href="https://github.com/rig-c/getting-started"><b>→ Getting started</b></a> — for people setting it up: try it in about three minutes with no GPU, then make your own character on an NVIDIA GPU, an Apple Silicon Mac, or with no GPU at all.</p>
+
 ### Does your model pass?
 
 An agent that has never seen these tools is handed one painting and the installed packages — nothing else — and has to build a rig that passes its check, add a wave, and correct a draft that fails. It writes down what it expects before every step. [**rig-c/exam**](https://github.com/rig-c/exam) is that exam, and these are the models that have sat it:
@@ -26,8 +28,6 @@ An agent that has never seen these tools is handed one painting and the installe
 <!-- exam:end -->
 
 Every line passed, and the three models named are each their vendor's lighter tier. **Sit it with yours:** paste [one prompt](https://github.com/rig-c/exam/blob/main/PROMPT.md) into any coding agent, open a pull request, and the run is regraded from the files it hands in and added to [the table](https://github.com/rig-c/exam#results) — with its journal, and whatever it found wrong with the tools.
-
-**New here and setting it up yourself?** [**Getting started**](https://github.com/rig-c/getting-started) is written for people: what the tools need, how to make it on a machine with an NVIDIA GPU, on an Apple Silicon Mac, or with no GPU, and the path from one painting to a rig playing in your browser.
 
 | | Repository | Install | What it does |
 | :-: | --- | --- | --- |
