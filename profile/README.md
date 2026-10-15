@@ -37,6 +37,7 @@ Every line passed, and the three models named are each their vendor's lighter ti
 | 2 | [**core**](https://github.com/rig-c/core) | `npm i -D rig-c` | The rig compiler: a rig spec and a motion spec in, skeleton data out — in the Spine 4.3 format, with its own compiled model beside it — gated by named assertions before a byte is written |
 | 3 | [**play**](https://github.com/rig-c/play) | `npm i @rig-c/play` | Plays the compiled model in the browser, as plain DOM elements or one canvas: tracks, mixing, additive layers, per-pose bone hooks |
 | 4 | [**pose**](https://github.com/rig-c/pose) | `npm i -D @rig-c/pose` | Puts motion from a pose sequence (a video, a dataset or hand-placed points) onto a rig rig-c built, as bone keys, checked before it is written |
+| 5 | [**adapters**](https://github.com/rig-c/adapters) | `npm install @rig-c/pixi pixi.js @rig-c/play`<br>`npm install @rig-c/phaser phaser @rig-c/play`<br>`npm install @rig-c/three three @rig-c/play` | Plays a rig-c model inside the engine or renderer your game already uses, with no Spine runtime. The 0.x APIs may change |
 
 ### Built for agents
 
