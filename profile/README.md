@@ -38,7 +38,7 @@ Every line passed, and the three models named are each their vendor's lighter ti
 | 3 | [**play**](https://github.com/rig-c/play) | `npm i @rig-c/play` | Plays the compiled model in the browser, as plain DOM elements or one canvas: tracks, mixing, additive layers, per-pose bone hooks |
 | 4 | [**pose**](https://github.com/rig-c/pose) | `npm i -D @rig-c/pose` | Puts motion from a pose sequence (a video, a dataset or hand-placed points) onto a rig rig-c built, as bone keys, checked before it is written |
 | 5 | [**adapters**](https://github.com/rig-c/adapters) | `npm install @rig-c/pixi pixi.js @rig-c/play`<br>`npm install @rig-c/phaser phaser @rig-c/play`<br>`npm install @rig-c/three three @rig-c/play` | Plays a rig-c model inside the engine or renderer your game already uses, with no Spine runtime. The 0.x APIs may change |
-| 6 | [**review**](https://github.com/rig-c/review) | `git clone` and `bun run review -- <output folder>` | A local workspace for a person to inspect what the agent built — setup geometry, motion played through `@rig-c/play`, the source video or pose sequence beside it, two builds side by side — and to export feedback bound to a frame, a bone or a slot, ready to become an issue. It annotates and never writes rig or motion data. Not yet published to npm |
+| 6 | [**review**](https://github.com/rig-c/review) | `npm i -D @rig-c/review` | A local workspace for a person to inspect what the agent built — setup geometry, motion played through `@rig-c/play`, the source video or pose sequence beside it, two builds side by side — and to export feedback bound to a frame, a bone or a slot, ready to become an issue. It annotates and never writes rig or motion data |
 
 ### Built for agents
 
