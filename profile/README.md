@@ -23,15 +23,22 @@ An agent that has never seen these tools is handed one painting and the installe
 <!-- exam:start — generated in rig-c/exam by `python3 results.py --profile`; do not edit by hand -->
 | model | sittings | lines passed, of lines graded | minutes for the tasks sat |
 | --- | --- | --- | --- |
+| [claude-fable-5-1](https://github.com/rig-c/exam/tree/main/results/claude-fable-5-1/) | 1 | 40 / 40 | 52.9 |
 | [Claude Haiku](https://github.com/rig-c/exam/tree/main/results/claude-haiku/) | 1 | 16 / 16 | 21 |
-| [Gemini 3.8 Flash](https://github.com/rig-c/exam/tree/main/results/gemini-3.8-flash/) | 1 | 16 / 16 | 20 |
+| [claude-haiku-5-5](https://github.com/rig-c/exam/tree/main/results/claude-haiku-5-5/) | 1 | 39 / 40 | 70.3 |
+| [claude-opus-5-5](https://github.com/rig-c/exam/tree/main/results/claude-opus-5-5/) | 1 | 40 / 40 | 64 |
+| [claude-sonnet-5-5](https://github.com/rig-c/exam/tree/main/results/claude-sonnet-5-5/) | 1 | 40 / 40 | 53.6 |
+| [Gemini 3.8 Flash](https://github.com/rig-c/exam/tree/main/results/gemini-3.8-flash/) | 2 | 56 / 56 | 20 to 31.1 |
+| [Gemini 4 Argon (high)](https://github.com/rig-c/exam/tree/main/results/gemini-4-argon/) | 1 | 40 / 40 | 71.3 |
+| [gpt-6-astra](https://github.com/rig-c/exam/tree/main/results/gpt-6-astra/) | 1 | 40 / 40 | 33.1 |
+| [gpt-6-luna](https://github.com/rig-c/exam/tree/main/results/gpt-6-luna/) | 1 | 31 / 40 | 29.1 |
 | [`gpt-6-sol` (not established which model)](https://github.com/rig-c/exam/tree/main/results/gpt-6-sol/) | 1 | 16 / 16 | 14.1 |
 | [Sol 6.1](https://github.com/rig-c/exam/tree/main/results/sol-6.1/) | 2 | 32 / 32 | 14.2 to 15.3 |
 <!-- exam:end -->
 
-Every line passed, and the three models named are each their vendor's lighter tier. **Sit it with yours:** paste [one prompt](https://github.com/rig-c/exam/blob/main/PROMPT.md) into any coding agent, open a pull request, and the run is regraded from the files it hands in and added to [the table](https://github.com/rig-c/exam#results) — with its journal, and whatever it found wrong with the tools.
+Eleven models have sat it, from each vendor's lighter tier to its heaviest; nine passed every line, and the two that missed one are on the page with the line they missed. **Sit it with yours:** paste [one prompt](https://github.com/rig-c/exam/blob/main/PROMPT.md) into any coding agent, open a pull request, and the run is regraded from the files it hands in and added to [the table](https://github.com/rig-c/exam#results) — with its journal, and whatever it found wrong with the tools.
 
-**Advanced.** The second edition starts from a rig that is already built: the agent puts a recorded walk, run and dance on it with `@rig-c/pose`, one round per fresh session, and fixes what the numbers say is wrong without ever seeing the footage — [rig-c/exam/advanced](https://github.com/rig-c/exam/tree/main/advanced). Five models have sat all three rounds and one cell failed; their figures converge in R1 and R3 and spread in R2, where the one new row of edition 0.21 comes from (shown here as a what-if).
+**Advanced.** The second edition starts from a rig that is already built: the agent puts a recorded walk, run and dance on it with `@rig-c/pose`, one round per fresh session, and fixes what the numbers say is wrong without ever seeing the footage — [rig-c/exam/advanced](https://github.com/rig-c/exam/tree/main/advanced). Six models have sat all three rounds and one cell failed; their figures converge in R1 and R3 and spread in R2, where the one new row of edition 0.21 comes from (shown here as a what-if).
 
 <!-- exam-advanced:start — generated in rig-c/exam by `python3 advanced/results.py --profile`; do not edit by hand -->
 | model | R1 walk | R2 run | R3 dance | 0.21 shin-scale row, what-if | minutes, R1 · R2 · R3 |
@@ -41,6 +48,7 @@ Every line passed, and the three models named are each their vendor's lighter ti
 | [`claude-sonnet-5-5`](https://github.com/rig-c/exam/tree/main/advanced/results/claude-sonnet-5-5/) | [9 / 9](https://github.com/rig-c/exam/tree/main/advanced/results/claude-sonnet-5-5/2026-10-18-R1/) | [14 / 14](https://github.com/rig-c/exam/tree/main/advanced/results/claude-sonnet-5-5/2026-10-18-R2/) | [13 / 13](https://github.com/rig-c/exam/tree/main/advanced/results/claude-sonnet-5-5/2026-10-18-R3/) | passes all 3 | 7.3 · 10.3 · 18.7 |
 | [`gemini-3.8-flash-medium`](https://github.com/rig-c/exam/tree/main/advanced/results/gemini-3.8-flash-medium/) | [9 / 9](https://github.com/rig-c/exam/tree/main/advanced/results/gemini-3.8-flash-medium/2026-10-18-R1/) | [14 / 14](https://github.com/rig-c/exam/tree/main/advanced/results/gemini-3.8-flash-medium/2026-10-18-R2/) | [13 / 13](https://github.com/rig-c/exam/tree/main/advanced/results/gemini-3.8-flash-medium/2026-10-18-R3/) | fails R2 (0.106) | 8.1 · 14.3 · 11.4 |
 | [`gemini-4-argon-high`](https://github.com/rig-c/exam/tree/main/advanced/results/gemini-4-argon-high/) | [9 / 9](https://github.com/rig-c/exam/tree/main/advanced/results/gemini-4-argon-high/2026-10-18-R1/) | [14 / 14](https://github.com/rig-c/exam/tree/main/advanced/results/gemini-4-argon-high/2026-10-18-R2/) | [13 / 13](https://github.com/rig-c/exam/tree/main/advanced/results/gemini-4-argon-high/2026-10-18-R3/) | passes all 3 | 16.8 · 20.3 · 32.5 |
+| [`gpt-6.1-sol`](https://github.com/rig-c/exam/tree/main/advanced/results/gpt-6.1-sol/) | [10 / 10](https://github.com/rig-c/exam/tree/main/advanced/results/gpt-6.1-sol/2026-10-20-R1/) | [15 / 15](https://github.com/rig-c/exam/tree/main/advanced/results/gpt-6.1-sol/2026-10-20-R2/) | [14 / 14](https://github.com/rig-c/exam/tree/main/advanced/results/gpt-6.1-sol/2026-10-20-R3/) | passes all 3 | 8.7 · 8.1 · 8.5 |
 <!-- exam-advanced:end -->
 
 | | Repository | Install | What it does |
