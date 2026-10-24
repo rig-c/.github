@@ -1,0 +1,69 @@
+name: profile results
+on:
+  schedule:
+    - cron: '23 3 * * *'
+  workflow_dispatch:
+
+# The only credential is this repository's default GITHUB_TOKEN.
+permissions:
+  contents: write
+  pull-requests: write
+concurrency:
+  group: exam-profile-results
+  cancel-in-progress: false
+jobs:
+  profile:
+    # Dispatch may select a feature branch; the destination base stays main.
+    if: github.repository == 'rig-c/.github'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out the public exam main
+        id: exam
+        uses: actions/checkout@v4
+        with:
+          repository: rig-c/exam
+          ref: main
+          path: exam
+          persist-credentials: false
+      - name: Check out the organisation profile base
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          path: profile
+          persist-credentials: false
+      - name: Generate and splice both tables and counts
+        run: python3 -B exam/tools/profile_results.py profile/profile/README.md
+      # Always compare the fixed branch to main so an obsolete PR can close
+      # when a later refresh removes the entire diff. Never merge from here.
+      - name: Open or update the one profile PR
+        uses: peter-evans/create-pull-request@22a9089034f40e5a961c8808d113e2c98fb63676 # v7
+        with:
+          token: ${{ github.token }}
+          path: profile
+          base: main
+          branch: codex/exam-profile-results
+          delete-branch: true
+          add-paths: profile/README.md
+          author: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
+          commit-message: |
+            docs(profile): exam tables at ${{ steps.exam.outputs.commit }}
+
+            Co-Authored-By: Naru <342599188+fj-naru[bot]@users.noreply.github.com>
+          title: 'docs(profile): exam tables at ${{ steps.exam.outputs.commit }}'
+          body: |
+            Refresh both exam tables and the derived Basic/Advanced counts from
+            [rig-c/exam at ${{ steps.exam.outputs.commit }}](https://github.com/rig-c/exam/commit/${{ steps.exam.outputs.commit }}).
+
+            The table blocks are the exact stdout of `python3 results.py --profile`
+            and `python3 advanced/results.py --profile` at that exam commit.
+            Recorded grades are unchanged; shin-scale what-ifs are not grades.
+
+            Tradeoffs: daily polling can lag a results change by up to a day
+            between scheduled runs, plus any GitHub scheduler delay. Dispatch
+            this workflow to refresh sooner. This PR uses GITHUB_TOKEN, so checks
+            do not run automatically: run or approve the appropriate checks
+            explicitly before merging.
+
+            Review the generated diff and merge by human sign. This workflow
+            neither merges nor enables auto-merge.
