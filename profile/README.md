@@ -42,9 +42,13 @@ An agent that has never seen these tools is handed one painting and the installe
 **Advanced:** 6 models, 6 with all three rounds; 5 passed every graded row in all three. 1 of 18 displayed round cells did not pass every row. Shin-scale what-ifs do not change the recorded grades.
 <!-- exam-summary:end -->
 
+the field runs from each vendor's lighter tier to its heaviest, and the models that missed a line are on the page with the line they missed.
+
 **Sit it with yours:** paste [one prompt](https://github.com/rig-c/exam/blob/main/PROMPT.md) into any coding agent, open a pull request, and the run is regraded from the files it hands in and added to [the table](https://github.com/rig-c/exam#results) — with its journal, and whatever it found wrong with the tools.
 
 **Advanced.** The second edition starts from a rig that is already built: the agent puts a recorded walk, run and dance on it with `@rig-c/pose`, one round per fresh session, and fixes what the numbers say is wrong without ever seeing the footage — [rig-c/exam/advanced](https://github.com/rig-c/exam/tree/main/advanced). 
+
+their figures converge in R1 and R3 and spread in R2, where edition 0.21's one new row comes from (shown as a what-if).
 
 <!-- exam-advanced:start — generated in rig-c/exam by `python3 advanced/results.py --profile`; do not edit by hand -->
 | model | R1 walk | R2 run | R3 dance | 0.21 shin-scale row, what-if | minutes, R1 · R2 · R3 |
