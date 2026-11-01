@@ -3,8 +3,9 @@
 `workflows/profile-results.yml` refreshes this repository's `profile/README.md`
 daily at **03:23 UTC**, and on **workflow_dispatch**. It checks out public
 `rig-c/exam` **main** and this repository's **main**, with credential persistence
-disabled for both. `exam/tools/profile_results.py` inserts the exact stdout of
-both exam `--profile` generators and derives the Basic/Advanced count paragraphs.
+disabled for both. `exam/tools/profile_results.py` rewrites the derived
+Basic/Advanced sentence. The profile carries no result tables; a table marker
+pair, if one is added back, gets the exact stdout of its `--profile` generator.
 The exam helper must be present on exam `main` before the first refresh.
 
 The PR title, commit and source link use the **actual exam checkout SHA** from
@@ -56,8 +57,8 @@ not prove remote authentication or PR creation.
 ## Local targeted verification
 
 Set `EXAM_CHECKOUT` to a local exam checkout containing the helper. The tests run
-the real splice command in a named work directory, compare both inserted blocks
-to the real generator CLIs, and verify a second run changes neither bytes nor
+the real splice command in a named work directory, read the refreshed sentence
+back, and verify a second run changes neither bytes nor
 mtime. They also check the schedule, dispatch, token, paths, actual exam SHA and
 fixed-PR contracts. They never invoke Git or write remotely.
 
