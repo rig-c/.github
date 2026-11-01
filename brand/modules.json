@@ -1,5 +1,16 @@
 [
   {
+    "name": "core",
+    "wordmark": "@rig-c/core",
+    "tagline": "AI-authored 2D rigging and animation, verified before it is written",
+    "chips": [
+      "RIG + MOTION SPECS",
+      "GATED BEFORE WRITE",
+      "NAMED FAILURES"
+    ],
+    "alt": "@rig-c/core — AI-authored 2D rigging and animation, verified before it is written"
+  },
+  {
     "name": "parts",
     "wordmark": "@rig-c/parts",
     "tagline": "2D character parts, weighted meshes and bone chains from one painting",
