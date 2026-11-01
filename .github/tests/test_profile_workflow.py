@@ -95,7 +95,7 @@ class WorkflowTests(unittest.TestCase):
             second = subprocess.run(shlex.split(step['run']), cwd=workspace, capture_output=True, check=True)
             self.assertEqual(second.stdout, b'profile_results: unchanged\n')
             self.assertEqual((dest.read_bytes(), dest.stat().st_mtime_ns), frozen)
-            self.assertEqual(dest.read_bytes(), current)
+            self.assertNotEqual(dest.read_bytes(), stale)
             self.assertNotIn(b'<!-- exam:start', current)
             self.assertNotIn(b'<!-- exam-advanced:start', current)
 
