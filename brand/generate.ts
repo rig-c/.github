@@ -188,6 +188,20 @@ function renderModuleMark(moduleName: string): string {
   const joints: string[] = [];
 
   switch (moduleName) {
+    case "core": {
+      // The C itself: five joints along one arc, the compiler the rest of the family hangs from
+      bones.push(renderBone("M 358 127.8 A 148 148 0 0 0 210 127.8", 1, 46));
+      bones.push(renderBone("M 210 127.8 A 148 148 0 0 0 136 256", 2, 46));
+      bones.push(renderBone("M 136 256 A 148 148 0 0 0 210 384.2", 3, 46));
+      bones.push(renderBone("M 210 384.2 A 148 148 0 0 0 358 384.2", 4, 46));
+      joints.push(renderJoint(358, 127.8, 1));
+      joints.push(renderJoint(210, 127.8, 2));
+      joints.push(renderJoint(136, 256, 3));
+      joints.push(renderJoint(210, 384.2, 4));
+      joints.push(renderJoint(358, 384.2, 5));
+      break;
+    }
+
     case "parts": {
       // Exploded figure coming apart into 5 separated anatomical parts around the central torso joint
       bones.push(renderAuxBone("M 184 184 L 328 184 L 328 328 L 184 328 Z", 20, "14 18"));
