@@ -6,106 +6,45 @@
   <img src="https://raw.githubusercontent.com/rig-c/.github/main/profile/trailer.webp?v=e42bc79" alt="A character on a swing under a night sky breathes, tilts, smiles and looks around, her long hair draping over the seat; she kicks, hops and waves while a reveal shows her moving meshes and bones" width="100%" />
 </p>
 
-<p align="center"><em>One painting, rigged with <code>@rig-c/parts</code> and compiled and rendered by <code>rig-c</code>. The swing is one more bone of the same skeleton; the hair, the skirt and the legs follow it by physics, and the meshes and bones shown are the render's own geometry. The sky, the lights and the captions are composited around the render. <a href="https://github.com/rig-c/trailer">How it was made, and one command to rebuild it →</a></em></p>
+<p align="center"><em>One painting, rigged with <code>@rig-c/parts</code>, compiled and rendered by <code>rig-c</code>. <a href="https://github.com/rig-c/trailer">How it was made →</a></em></p>
 
-**2D character rigs, authored by an AI agent that cannot see them — and verified before anything is written.**
-One painting goes in; a rigged, animated character that plays in the browser comes out. Every stage prints named,
-numeric findings and refuses by name what it cannot verify, so a wrong file never reaches the disk.
+**2D character rigs, authored by an AI agent that cannot see them, and verified before anything is written.**
+One painting goes in; a rigged, animated character that plays in the browser comes out. Every stage refuses by name what it cannot verify, so a wrong file never reaches the disk.
 
-**rig-c makes no images.** The painting and its layer split come from image models you run yourself — on your own GPU, or a free web demo. rig-c starts from those files, ships no model weights, and runs every one of its own steps on the CPU.
+rig-c makes no images: the painting and its layer split come from image models you run yourself.
 
-<p align="center"><a href="https://github.com/rig-c/getting-started"><b>→ Getting started</b></a> — for people setting it up: try it in about three minutes with no GPU, then make your own character on an NVIDIA GPU, an Apple Silicon Mac, or with no GPU at all.</p>
+<p align="center"><a href="https://github.com/rig-c/getting-started"><b>→ Getting started</b></a></p>
+
+### Repositories
+
+`parts` makes the pieces, `core` compiles and checks the rig, and `play` or `adapters` run it. `pose` adds motion, and `review` is where a person looks at the result.
+
+| Repository | Package | What it does |
+| --- | --- | --- |
+| [**parts**](https://github.com/rig-c/parts) | `@rig-c/parts` | Turns one painting's layers into rig-ready parts, meshes, bones, physics and an idle |
+| [**core**](https://github.com/rig-c/core) | `rig-c` | Compiles a rig and motion spec into skeleton data, checked before a byte is written |
+| [**play**](https://github.com/rig-c/play) | `@rig-c/play` | Plays the compiled model in the browser, as DOM elements or one canvas |
+| [**adapters**](https://github.com/rig-c/adapters) | `@rig-c/pixi` · `@rig-c/phaser` · `@rig-c/three` | Plays a model inside PixiJS, Phaser or Three.js, with no Spine runtime |
+| [**pose**](https://github.com/rig-c/pose) | `@rig-c/pose` | Puts motion from a video, a dataset or hand-placed points onto a rig |
+| [**review**](https://github.com/rig-c/review) | `@rig-c/review` | A local workspace to inspect a rig and export feedback bound to a frame, bone or slot |
+
+| Also here | |
+| --- | --- |
+| [**getting-started**](https://github.com/rig-c/getting-started) | The guide for people setting the toolchain up |
+| [**examples**](https://github.com/rig-c/examples) | The public example corpus |
+| [**exam**](https://github.com/rig-c/exam) | The open-book exam for AI agents |
+| [**trailer**](https://github.com/rig-c/trailer) | The trailer, with one command to rebuild it |
 
 ### Does your model pass?
 
-An agent that has never seen these tools is handed one painting and the installed packages — nothing else — and has to build a rig that passes its check, add a wave, and correct a draft that fails. It writes down what it expects before every step. [**rig-c/exam**](https://github.com/rig-c/exam) is that exam, and these are the models that have sat it:
-
-<!-- exam:start — generated in rig-c/exam by `python3 results.py --profile`; do not edit by hand -->
-| model | sittings | lines passed, of lines graded | minutes for the tasks sat |
-| --- | --- | --- | --- |
-| [claude-fable-5-1](https://github.com/rig-c/exam/tree/main/results/claude-fable-5-1/) | 2 | 57 / 57 | 40.6 to 52.9 |
-| [Claude Haiku](https://github.com/rig-c/exam/tree/main/results/claude-haiku/) | 1 | 16 / 16 | 21 |
-| [claude-haiku-5-5](https://github.com/rig-c/exam/tree/main/results/claude-haiku-5-5/) | 2 | 56 / 57 | 42.5 to 70.3 |
-| [claude-opus-5-5](https://github.com/rig-c/exam/tree/main/results/claude-opus-5-5/) | 2 | 57 / 57 | 29.2 to 64 |
-| [claude-sonnet-5-5](https://github.com/rig-c/exam/tree/main/results/claude-sonnet-5-5/) | 2 | 57 / 57 | 27.9 to 53.6 |
-| [Gemini 3.8 Flash](https://github.com/rig-c/exam/tree/main/results/gemini-3.8-flash/) | 2 | 56 / 56 | 20 to 31.1 |
-| [Gemini 3.8 Flash (Medium)](https://github.com/rig-c/exam/tree/main/results/gemini-3.8-flash-medium/) | 1 | 17 / 17 | 33.4 |
-| [Gemini 4 Argon (high)](https://github.com/rig-c/exam/tree/main/results/gemini-4-argon/) | 1 | 40 / 40 | 71.3 |
-| [Gemini 4 Argon (High)](https://github.com/rig-c/exam/tree/main/results/gemini-4-argon-high/) | 1 | 17 / 17 | 39.9 |
-| [gpt-5.6-luna](https://github.com/rig-c/exam/tree/main/results/gpt-5.6-luna/) | 1 | 0 / 0 | 9.4 |
-| [gpt-5.6-sol](https://github.com/rig-c/exam/tree/main/results/gpt-5.6-sol/) | 1 | 17 / 17 | 22.3 |
-| [gpt-5.6-terra](https://github.com/rig-c/exam/tree/main/results/gpt-5.6-terra/) | 1 | 0 / 0 | 5.1 |
-| [gpt-6-astra](https://github.com/rig-c/exam/tree/main/results/gpt-6-astra/) | 2 | 57 / 57 | 13.3 to 33.1 |
-| [gpt-6-luna](https://github.com/rig-c/exam/tree/main/results/gpt-6-luna/) | 2 | 45 / 57 | 24 to 29.1 |
-| [`gpt-6-sol` (not established which model)](https://github.com/rig-c/exam/tree/main/results/gpt-6-sol/) | 2 | 33 / 33 | 13.9 to 14.1 |
-| [gpt-6.1-sol](https://github.com/rig-c/exam/tree/main/results/gpt-6.1-sol/) | 1 | 17 / 17 | 18.1 |
-| [Sol 6.1](https://github.com/rig-c/exam/tree/main/results/sol-6.1/) | 2 | 32 / 32 | 14.2 to 15.3 |
-
-On Round 5's painting, tasks 01, 02 and 04 (not summed with the table above):
-
-| model | lines passed, of lines graded |
-| --- | --- |
-| [claude-fable-5-1](https://github.com/rig-c/exam/tree/main/results/claude-fable-5-1/) | 21 / 21 |
-| [claude-haiku-5-5](https://github.com/rig-c/exam/tree/main/results/claude-haiku-5-5/) | 21 / 21 |
-| [claude-opus-5-5](https://github.com/rig-c/exam/tree/main/results/claude-opus-5-5/) | 21 / 21 |
-| [claude-sonnet-5-5](https://github.com/rig-c/exam/tree/main/results/claude-sonnet-5-5/) | 21 / 21 |
-| [Gemini 3.8 Flash (Medium)](https://github.com/rig-c/exam/tree/main/results/gemini-3.8-flash-medium/) | 21 / 21 |
-| [Gemini 4 Argon (High)](https://github.com/rig-c/exam/tree/main/results/gemini-4-argon-high/) | 21 / 21 |
-| [gpt-5.6-luna](https://github.com/rig-c/exam/tree/main/results/gpt-5.6-luna/) | 11 / 12 |
-| [gpt-5.6-sol](https://github.com/rig-c/exam/tree/main/results/gpt-5.6-sol/) | 21 / 21 |
-| [gpt-5.6-terra](https://github.com/rig-c/exam/tree/main/results/gpt-5.6-terra/) | 4 / 4 |
-| [gpt-6-astra](https://github.com/rig-c/exam/tree/main/results/gpt-6-astra/) | 21 / 21 |
-| [gpt-6-luna](https://github.com/rig-c/exam/tree/main/results/gpt-6-luna/) | 2 / 12 |
-| [`gpt-6-sol` (not established which model)](https://github.com/rig-c/exam/tree/main/results/gpt-6-sol/) | 21 / 21 |
-| [gpt-6.1-sol](https://github.com/rig-c/exam/tree/main/results/gpt-6.1-sol/) | 21 / 21 |
-<!-- exam:end -->
-
-The field runs from each vendor's lighter tier to its heaviest, and the models that missed a line are on the page with the line they missed.
+[**rig-c/exam**](https://github.com/rig-c/exam) gives an agent one painting and the installed packages, and nothing else.
 
 <!-- exam-summary:start — generated by rig-c/exam; do not edit by hand -->
-**Basic:** 17 models, 14 passed every graded line across their independent sittings (26 sittings). Only tasks actually graded count; this does not claim that every task was sat.
-
-**Advanced:** 6 models, 6 with all three rounds; 5 passed every graded row in all three. 1 of 18 displayed round cells did not pass every row. Shin-scale what-ifs do not change the recorded grades.
+**Basic:** 14 of 17 models passed every graded line, from each vendor's lighter tier to its heaviest. **Advanced:** 5 of 6 passed every graded row in all three rounds.
 <!-- exam-summary:end -->
 
-**Sit it with yours:** paste [one prompt](https://github.com/rig-c/exam/blob/main/PROMPT.md) into any coding agent, open a pull request, and the run is regraded from the files it hands in and added to [the table](https://github.com/rig-c/exam#results) — with its journal, and whatever it found wrong with the tools.
+Claude Sonnet and Gemini Flash are already enough for this work; Claude Haiku and GPT Luna miss some lines. [See every result](https://github.com/rig-c/exam#results), or [sit it with yours](https://github.com/rig-c/exam/blob/main/PROMPT.md).
 
-**Advanced.** The second edition starts from a rig that is already built: the agent puts a recorded walk, run and dance on it with `@rig-c/pose`, one round per fresh session, and fixes what the numbers say is wrong without ever seeing the footage — [rig-c/exam/advanced](https://github.com/rig-c/exam/tree/main/advanced). 
+---
 
-<!-- exam-advanced:start — generated in rig-c/exam by `python3 advanced/results.py --profile`; do not edit by hand -->
-| model | R1 walk | R2 run | R3 dance | 0.21 shin-scale row, what-if | minutes, R1 · R2 · R3 |
-| --- | --- | --- | --- | --- | --- |
-| [`claude-haiku-5-5`](https://github.com/rig-c/exam/tree/main/advanced/results/claude-haiku-5-5/) | [9 / 9](https://github.com/rig-c/exam/tree/main/advanced/results/claude-haiku-5-5/2026-10-18-R1/) | [8 / 14](https://github.com/rig-c/exam/tree/main/advanced/results/claude-haiku-5-5/2026-10-18-R2/) FAIL | [13 / 13](https://github.com/rig-c/exam/tree/main/advanced/results/claude-haiku-5-5/2026-10-18-R3/) | passes all 3 | 3.1 · 2.4 · 7.4 |
-| [`claude-opus-5-5`](https://github.com/rig-c/exam/tree/main/advanced/results/claude-opus-5-5/) | [9 / 9](https://github.com/rig-c/exam/tree/main/advanced/results/claude-opus-5-5/2026-10-18-R1/) | [14 / 14](https://github.com/rig-c/exam/tree/main/advanced/results/claude-opus-5-5/2026-10-18-R2/) | [13 / 13](https://github.com/rig-c/exam/tree/main/advanced/results/claude-opus-5-5/2026-10-18-R3/) | fails R2 (0.106) | 8.2 · 8.7 · 8.4 |
-| [`claude-sonnet-5-5`](https://github.com/rig-c/exam/tree/main/advanced/results/claude-sonnet-5-5/) | [9 / 9](https://github.com/rig-c/exam/tree/main/advanced/results/claude-sonnet-5-5/2026-10-18-R1/) | [14 / 14](https://github.com/rig-c/exam/tree/main/advanced/results/claude-sonnet-5-5/2026-10-18-R2/) | [13 / 13](https://github.com/rig-c/exam/tree/main/advanced/results/claude-sonnet-5-5/2026-10-18-R3/) | passes all 3 | 7.3 · 10.3 · 18.7 |
-| [`gemini-3.8-flash-medium`](https://github.com/rig-c/exam/tree/main/advanced/results/gemini-3.8-flash-medium/) | [9 / 9](https://github.com/rig-c/exam/tree/main/advanced/results/gemini-3.8-flash-medium/2026-10-18-R1/) | [14 / 14](https://github.com/rig-c/exam/tree/main/advanced/results/gemini-3.8-flash-medium/2026-10-18-R2/) | [13 / 13](https://github.com/rig-c/exam/tree/main/advanced/results/gemini-3.8-flash-medium/2026-10-18-R3/) | fails R2 (0.106) | 8.1 · 14.3 · 11.4 |
-| [`gemini-4-argon-high`](https://github.com/rig-c/exam/tree/main/advanced/results/gemini-4-argon-high/) | [9 / 9](https://github.com/rig-c/exam/tree/main/advanced/results/gemini-4-argon-high/2026-10-18-R1/) | [14 / 14](https://github.com/rig-c/exam/tree/main/advanced/results/gemini-4-argon-high/2026-10-18-R2/) | [13 / 13](https://github.com/rig-c/exam/tree/main/advanced/results/gemini-4-argon-high/2026-10-18-R3/) | passes all 3 | 16.8 · 20.3 · 32.5 |
-| [`gpt-6.1-sol`](https://github.com/rig-c/exam/tree/main/advanced/results/gpt-6.1-sol/) | [10 / 10](https://github.com/rig-c/exam/tree/main/advanced/results/gpt-6.1-sol/2026-10-20-R1/) | [15 / 15](https://github.com/rig-c/exam/tree/main/advanced/results/gpt-6.1-sol/2026-10-20-R2/) | [14 / 14](https://github.com/rig-c/exam/tree/main/advanced/results/gpt-6.1-sol/2026-10-20-R3/) | passes all 3 | 8.7 · 8.1 · 8.5 |
-<!-- exam-advanced:end -->
-
-Their figures converge in R1 and R3 and spread in R2, where edition 0.21's one new row comes from (shown as a what-if).
-
-| | Repository | Install | What it does |
-| :-: | --- | --- | --- |
-| 1 | [**parts**](https://github.com/rig-c/parts) | `npm i -D @rig-c/parts` | Assembles one character painting's decomposed layers into rig-ready parts, then authors weighted meshes, bone chains, physics and a looping idle over them |
-| 2 | [**core**](https://github.com/rig-c/core) | `npm i -D rig-c` | The rig compiler: a rig spec and a motion spec in, skeleton data out — in the Spine 4.3 format, with its own compiled model beside it — gated by named assertions before a byte is written |
-| 3 | [**play**](https://github.com/rig-c/play) | `npm i @rig-c/play` | Plays the compiled model in the browser, as plain DOM elements or one canvas: tracks, mixing, additive layers, per-pose bone hooks |
-| 4 | [**pose**](https://github.com/rig-c/pose) | `npm i -D @rig-c/pose` | Puts motion from a pose sequence (a video, a dataset or hand-placed points) onto a rig rig-c built, as bone keys, checked before it is written |
-| 5 | [**adapters**](https://github.com/rig-c/adapters) | `npm install @rig-c/pixi pixi.js @rig-c/play`<br>`npm install @rig-c/phaser phaser @rig-c/play`<br>`npm install @rig-c/three three @rig-c/play` | Plays a rig-c model inside the engine or renderer your game already uses, with no Spine runtime. The 0.x APIs may change |
-| 6 | [**review**](https://github.com/rig-c/review) | `npm i -D @rig-c/review` | A local workspace for a person to inspect what the agent built — setup geometry, motion played through `@rig-c/play`, the source video or pose sequence beside it, two builds side by side — and to export feedback bound to a frame, a bone or a slot, ready to become an issue. It annotates and never writes rig or motion data |
-
-### Built for agents
-
-- **The messages are the interface.** A refusal names the object, the value found and the value required — an agent reads the line and knows which file to change.
-- **Nothing is invented.** Where the input is silent the tool says so; it does not guess a value and carry on.
-- **Emit only after green.** The compiler writes nothing that fails its gate.
-
-- **A person can still look.** `review` is where the agent's output is inspected by eye, and what the person marks comes back as data — a frame, a target, a line — instead of a conversation the next agent never saw.
-
-`core` and `parts` each carry a `docs/AUTHORING.md` — the guide an agent authors from — and ship as agent skills; `play`'s README is its guide.
-
-### Names
-
-`rig-c` is also published as `@rig-c/core`. `rig-parts` and `rig-play` are `@rig-c/parts` and `@rig-c/play` under the names they shipped as before the scope; `spine-rigc`, `spine-parts` and `spine-html` are the same packages under their first names. Every alias carries the same files at every version.
-
-The tools are MIT licensed; the exam's content is CC BY-NC 4.0.
+The tools are MIT licensed; the exam's content is CC BY-NC 4.0. `rig-c` is also published as `@rig-c/core`, and older names such as `rig-parts` and `spine-rigc` are aliases of the same packages.
