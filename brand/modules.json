@@ -1,0 +1,134 @@
+[
+  {
+    "name": "parts",
+    "wordmark": "@rig-c/parts",
+    "tagline": "2D character parts, weighted meshes and bone chains from one painting",
+    "chips": [
+      "SEE-THROUGH LAYERS",
+      "WEIGHTED MESHES",
+      "LOOPING IDLE"
+    ],
+    "alt": "@rig-c/parts — 2D character parts, weighted meshes and bone chains from one painting"
+  },
+  {
+    "name": "review",
+    "wordmark": "@rig-c/review",
+    "tagline": "Local human rig inspection, reference comparison and feedback export",
+    "chips": [
+      "HUMAN INSPECTION",
+      "SOURCE COMPARE",
+      "STRUCTURED FEEDBACK"
+    ],
+    "alt": "@rig-c/review — Local human rig inspection, reference comparison and feedback export"
+  },
+  {
+    "name": "pose",
+    "wordmark": "@rig-c/pose",
+    "tagline": "Cleans and retargets a body-18 pose sequence onto a rig-c skeleton",
+    "chips": [
+      "BODY-18 SEQUENCE",
+      "CLEAN & RETARGET",
+      "GATED BONE KEYS"
+    ],
+    "alt": "@rig-c/pose — Cleans and retargets a body-18 pose sequence onto a rig-c skeleton"
+  },
+  {
+    "name": "adapters",
+    "wordmark": "rig-c/adapters",
+    "tagline": "Play a rig-c compiled model inside a web engine through @rig-c/play",
+    "chips": [
+      "PIXIJS 8",
+      "PHASER 4.2+",
+      "THREE.JS"
+    ],
+    "alt": "rig-c/adapters — Play a rig-c compiled model inside a web engine through @rig-c/play"
+  },
+  {
+    "name": "phaser",
+    "wordmark": "@rig-c/phaser",
+    "tagline": "Play a rig-c model inside a Phaser 4.2+ WebGL scene through @rig-c/play",
+    "chips": [
+      "PHASER 4.2+ WEBGL",
+      "NATIVE MESH2D",
+      "NO SPINE RUNTIME"
+    ],
+    "alt": "@rig-c/phaser — Play a rig-c model inside a Phaser 4.2+ WebGL scene through @rig-c/play"
+  },
+  {
+    "name": "pixi",
+    "wordmark": "@rig-c/pixi",
+    "tagline": "PixiJS 8 adapter for rig-c model documents, posed through @rig-c/play",
+    "chips": [
+      "PIXIJS 8 CONTAINER",
+      "LIVE-FRAME LEASE",
+      "NO SPINE RUNTIME"
+    ],
+    "alt": "@rig-c/pixi — PixiJS 8 adapter for rig-c model documents, posed through @rig-c/play"
+  },
+  {
+    "name": "three",
+    "wordmark": "@rig-c/three",
+    "tagline": "Draw a rig-c model in a native Three.js scene through @rig-c/play",
+    "chips": [
+      "THREE.JS GROUP",
+      "FLOAT32 GEOMETRY",
+      "NO SPINE RUNTIME"
+    ],
+    "alt": "@rig-c/three — Draw a rig-c model in a native Three.js scene through @rig-c/play"
+  },
+  {
+    "name": "examples",
+    "wordmark": "rig-c/examples",
+    "tagline": "Source assets, standalone samples and trials for the rig-c toolchain",
+    "chips": [
+      "PINNED CORPUS",
+      "STANDALONE SAMPLES",
+      "RECORDED TRIALS"
+    ],
+    "alt": "rig-c/examples — Source assets, standalone samples and trials for the rig-c toolchain"
+  },
+  {
+    "name": "getting-started",
+    "wordmark": "rig-c/getting-started",
+    "tagline": "Step-by-step walkthrough from one character painting to a browser rig",
+    "chips": [
+      "ONE PAINTING IN",
+      "NO GPU WALKTHROUGH",
+      "BROWSER PLAYBACK"
+    ],
+    "alt": "rig-c/getting-started — Step-by-step walkthrough from one character painting to a browser rig"
+  },
+  {
+    "name": "exam",
+    "wordmark": "rig-c/exam",
+    "tagline": "Open-book exam for AI agents: one painting to a gated rig with a journal",
+    "chips": [
+      "OPEN-BOOK TASKS",
+      "HASH-CHAIN JOURNAL",
+      "REBUILT BY GRADER"
+    ],
+    "alt": "rig-c/exam — Open-book exam for AI agents: one painting to a gated rig with a journal"
+  },
+  {
+    "name": "trailer",
+    "wordmark": "rig-c/trailer",
+    "tagline": "The rig-c trailer, reproducible from one painting to an animated loop",
+    "chips": [
+      "ONE PAINTING INPUT",
+      "FIVE-STEP BUILD",
+      "REPRODUCIBLE LOOP"
+    ],
+    "alt": "rig-c/trailer — The rig-c trailer, reproducible from one painting to an animated loop"
+  },
+  {
+    "name": "play",
+    "wordmark": "@rig-c/play",
+    "tagline": "Plays rig-c's compiled model as plain DOM elements or one canvas",
+    "chips": [
+      "DOM IMG & CSS MATRIX",
+      "ONE-CANVAS MODE",
+      "NO SPINE RUNTIME"
+    ],
+    "alt": "@rig-c/play — Plays rig-c's compiled model as plain DOM elements or one canvas"
+  }
+]
