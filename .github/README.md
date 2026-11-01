@@ -57,8 +57,8 @@ not prove remote authentication or PR creation.
 ## Local targeted verification
 
 Set `EXAM_CHECKOUT` to a local exam checkout containing the helper. The tests run
-the real splice command in a named work directory, compare the refreshed sentence
-to the real generator CLIs, and verify a second run changes neither bytes nor
+the real splice command in a named work directory, read the refreshed sentence
+back, and verify a second run changes neither bytes nor
 mtime. They also check the schedule, dispatch, token, paths, actual exam SHA and
 fixed-PR contracts. They never invoke Git or write remotely.
 
