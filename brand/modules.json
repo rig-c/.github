@@ -11,6 +11,17 @@
     "alt": "@rig-c/core — AI-authored 2D rigging and animation, verified before it is written"
   },
   {
+    "name": "create",
+    "wordmark": "@rig-c/create",
+    "tagline": "Project direction, an interview and a signed plan before rigging",
+    "chips": [
+      "INTERVIEW",
+      "SIGNED PLAN",
+      "STAGE CHECKS"
+    ],
+    "alt": "@rig-c/create — Project direction, an interview and a signed plan before rigging"
+  },
+  {
     "name": "parts",
     "wordmark": "@rig-c/parts",
     "tagline": "2D character parts, weighted meshes and bone chains from one painting",

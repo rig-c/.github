@@ -202,6 +202,20 @@ function renderModuleMark(moduleName: string): string {
       break;
     }
 
+    case "create": {
+      // Five joints along one stepped authoring path
+      bones.push(renderBone("M 112 384 L 256 384", 1, 46));
+      bones.push(renderBone("M 256 384 L 256 256", 2, 46));
+      bones.push(renderBone("M 256 256 L 400 256", 3, 46));
+      bones.push(renderBone("M 400 256 L 400 128", 4, 46));
+      joints.push(renderJoint(112, 384, 1));
+      joints.push(renderJoint(256, 384, 2));
+      joints.push(renderJoint(256, 256, 3));
+      joints.push(renderJoint(400, 256, 4));
+      joints.push(renderJoint(400, 128, 5));
+      break;
+    }
+
     case "parts": {
       // Exploded figure coming apart into 5 separated anatomical parts around the central torso joint
       bones.push(renderAuxBone("M 184 184 L 328 184 L 328 328 L 184 328 Z", 20, "14 18"));
