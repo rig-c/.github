@@ -48,4 +48,4 @@ Claude Sonnet and Gemini Flash are already enough for this work; Claude Haiku an
 
 ---
 
-The tools are MIT licensed; the exam's content is CC BY-NC 4.0. `rig-c` is also published as `@rig-c/core`, and older names such as `rig-create`, `rig-parts` and `spine-rigc` are aliases of the same packages.
+The tools are MIT licensed; the exam's content is CC BY-NC 4.0. `rig-c` is also published as `@rig-c/core`, and names such as `rig-create`, `rig-parts` and `spine-rigc` are aliases of the same packages.
