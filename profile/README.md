@@ -17,10 +17,11 @@ rig-c makes no images: the painting and its layer split come from image models y
 
 ### Repositories
 
-`parts` makes the pieces, `core` compiles and checks the rig, and `play` or `adapters` run it. `pose` adds motion, and `review` is where a person looks at the result.
+`create` sets up the project with the user's direction, an interview and a signed plan. `parts` makes the pieces, `core` compiles and checks the rig, and `play` or `adapters` run it. `pose` adds motion, and `review` is where a person looks at the result.
 
 | Repository | Package | What it does |
 | --- | --- | --- |
+| [**create**](https://github.com/rig-c/create) | `@rig-c/create` | Project direction, an interview and a signed plan before rigging |
 | [**parts**](https://github.com/rig-c/parts) | `@rig-c/parts` | Turns one painting's layers into rig-ready parts, meshes, bones, physics and an idle |
 | [**core**](https://github.com/rig-c/core) | `rig-c` | Compiles a rig and motion spec into skeleton data, checked before a byte is written |
 | [**play**](https://github.com/rig-c/play) | `@rig-c/play` | Plays the compiled model in the browser, as DOM elements or one canvas |
@@ -47,4 +48,4 @@ Claude Sonnet and Gemini Flash are already enough for this work; Claude Haiku an
 
 ---
 
-The tools are MIT licensed; the exam's content is CC BY-NC 4.0. `rig-c` is also published as `@rig-c/core`, and older names such as `rig-parts` and `spine-rigc` are aliases of the same packages.
+The tools are MIT licensed; the exam's content is CC BY-NC 4.0. `rig-c` is also published as `@rig-c/core`, and older names such as `rig-create`, `rig-parts` and `spine-rigc` are aliases of the same packages.
