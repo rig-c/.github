@@ -6,7 +6,7 @@
   <img src="https://raw.githubusercontent.com/rig-c/.github/main/profile/trailer.webp?v=e42bc79" alt="A character on a swing under a night sky breathes, tilts, smiles and looks around, her long hair draping over the seat; she kicks, hops and waves while a reveal shows her moving meshes and bones" width="100%" />
 </p>
 
-<p align="center"><em>One painting, rigged with <code>@rig-c/parts</code>, compiled and rendered by <code>rig-c</code>. <a href="https://github.com/rig-c/trailer">How it was made →</a></em></p>
+<p align="center"><em>One painting, rigged with <code>@rig-c/parts</code>, compiled and rendered by <code>@rig-c/core</code>. <a href="https://github.com/rig-c/trailer">How it was made →</a></em></p>
 
 **2D character rigs, authored by an AI agent that cannot see them, and verified before anything is written.**
 One painting goes in; a rigged, animated character that plays in the browser comes out. Every stage refuses by name what it cannot verify, so a wrong file never reaches the disk.
@@ -23,7 +23,7 @@ rig-c makes no images: the painting and its layer split come from image models y
 | --- | --- | --- |
 | [**create**](https://github.com/rig-c/create) | `@rig-c/create` | Project direction, an interview and a signed plan before rigging |
 | [**parts**](https://github.com/rig-c/parts) | `@rig-c/parts` | Turns one painting's layers into rig-ready parts, meshes, bones, physics and an idle |
-| [**core**](https://github.com/rig-c/core) | `rig-c` | Compiles a rig and motion spec into skeleton data, checked before a byte is written |
+| [**core**](https://github.com/rig-c/core) | `@rig-c/core` | Compiles a rig and motion spec into skeleton data, checked before a byte is written |
 | [**play**](https://github.com/rig-c/play) | `@rig-c/play` | Plays the compiled model in the browser, as DOM elements or one canvas |
 | [**adapters**](https://github.com/rig-c/adapters) | `@rig-c/pixi` · `@rig-c/phaser` · `@rig-c/three` | Plays a model inside PixiJS, Phaser or Three.js, with no Spine runtime |
 | [**pose**](https://github.com/rig-c/pose) | `@rig-c/pose` | Puts motion from a video, a dataset or hand-placed points onto a rig |
@@ -48,4 +48,4 @@ Claude Sonnet and Gemini Flash are already enough for this work; Claude Haiku an
 
 ---
 
-The tools are MIT licensed; the exam's content is CC BY-NC 4.0. `rig-c` is also published as `@rig-c/core`, and names such as `rig-create`, `rig-parts` and `spine-rigc` are aliases of the same packages.
+The tools are MIT licensed; the exam's content is CC BY-NC 4.0. Each package is published under the `@rig-c` scope; names such as `rig-c`, `rig-create`, `rig-parts` and `spine-rigc` are install aliases of the same packages.
